@@ -28,7 +28,7 @@ const Diagram: React.FC = () => {
       <Card
         name="Company"
         position={companyPosition}
-        // onDragEnd={(position) => handleDragEnd(position)}
+        onDragEnd={(position) => handleDragEnd(position)}
       />
       {departments.map((dep) => (
         <React.Fragment key={dep.id}>

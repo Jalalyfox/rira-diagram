@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Company and Departments Diagram
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application built using TypeScript and Redux that visualizes a company's structure with its departments. The diagram displays the company and its departments as draggable cards connected by lines, allowing for easy manipulation and visualization of the company's organizational structure.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Draggable Cards:** Each department and the company are displayed as draggable cards. You can move them around the screen.
+- **Dynamic Lines:** Lines connect the company to its departments, visually representing the relationship between them.
+- **Add Departments:** Users can add new departments using a simple form.
+- **Persistent State:** The application uses Redux for state management, and departments data is fetched from a mock API.
+- **TypeScript:** The project is developed with TypeScript to ensure type safety and enhance development experience.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To get started with the project, follow the instructions below.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Ensure you have Node.js and npm installed on your development machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+```git clone github.com/Jalalyfox/rira-diagram```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
+```cd rira-diagram```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies:
+```npm install```
+### Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the application in development mode, use the following command:
+```npm start```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This will start the app on [http://localhost:3000](http://localhost:3000). The page will reload if you make edits, and you will see any lint errors in the console.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Building for Production
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To build the app for production, run:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```npm run build```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will create a `build` folder containing the optimized and minified version of the app, ready for deployment.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+This will launch the test runner in interactive watch mode.
+
+## Project Structure
+
+- **`src/components`:** Contains reusable components like cards, lines, and forms for adding departments.
+- **`src/features`:** Contains Redux slices for managing company and department states.
+- **`src/pages`:** Includes the main pages of the application, such as the diagram page.
+- **`src/services`:** API service layer for interacting with mock backend endpoints.
+- **`src/store`:** Redux store configuration.
+- **`src/hooks`:** Custom hooks for typed selector and dispatch in Redux.
